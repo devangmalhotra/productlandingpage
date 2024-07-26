@@ -189,11 +189,24 @@ a:hover {
         text-align: center;
     }  
 
+    .navbar {
+        position: relative;
+    }
+
     .navbar ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
+        margin: 10px 0;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    #header li:last-child {
+        margin: 10px 10px;
     }
 }
