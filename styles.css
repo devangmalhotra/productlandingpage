@@ -59,7 +59,6 @@ input, button {
     align-items: center;
     justify-content: space-evenly;
     margin: 50px 0;
-    
 }
 
 h2 {
@@ -68,11 +67,13 @@ h2 {
 
 #third-section {
     background-color: white;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
 }
 
 #video {
-    display: block;
-    margin: 0 auto;
+    width: 100%;
 }
 
 #fourth-section {
@@ -86,14 +87,41 @@ h2 {
 
 .card {
     background-color: bisque;
-    height: 300px;
+    height: 275px;
     width: calc(100% / 3);
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     border: solid black;
     min-width: 225px;
-    padding: 20px;
     text-align: center;  
+}
+
+.card-title {
+    background-color: rgb(231, 231, 231);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.card-body {
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: x-large;
+    font-weight: 700;
+
+}
+
+.card-body-description {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.card-body-description-text {
+    font-size: large;
 }
 
 h3 {
