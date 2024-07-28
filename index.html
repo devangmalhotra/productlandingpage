@@ -8,25 +8,25 @@
 </head>
 <body>
     <header id="header">
-        <div class="header-logo-text">
-            <p>LOGO</p>
-        </div>
-        <nav class="navbar">
+        <img src="https://cdn-icons-png.flaticon.com/512/552/552249.png" alt="logo" id="header-img">
+        <nav id="nav-bar">
             <ul>
-                <li><a href="#first-section">First Section</a></li>
-                <li><a href="#second-section">Second Section</a></li>
-                <li><a href="#third-section">Third Section</a></li>
-                <li><a href="#fourth-section">Fourth Section</a></li>
+                <li><a class="nav-link" href="#first-section">First Section</a></li>
+                <li><a class="nav-link" href="#second-section">Second Section</a></li>
+                <li><a class="nav-link" href="#third-section">Third Section</a></li>
+                <li><a class="nav-link" href="#fourth-section">Fourth Section</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="first-section">
             <h1>Lorem ipsum dolor!</h1>
-            <div class="emailandbutton">
-                <input type="email" name="emailid" id="emailid" placeholder="e.g., xxx@xxx.com">
-                <button type="submit" value="Submit">Submit</button>
-            </div>
+            <form action="" id="form">
+                <div class="emailandbutton">
+                    <input type="email" name="email" id="email" placeholder="e.g., xxx@xxx.com" required>
+                </div>
+                <input id="submit" type="submit" value="Submit" form="form"></input>
+            </form>
         </section>
         <section id="second-section">
             <div class="iconandtext">

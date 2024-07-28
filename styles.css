@@ -7,31 +7,44 @@
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 30px 40px 0 40px;
+    margin: 0 0 0 0;
     /*background-color: rgb(241, 241, 241);*/
     background-color: white;
+    min-width: 500px;
 }
 
 #header {
+    background-color: rgb(231, 231, 231);
     display: flex;
+    align-items: center;
     flex-direction: row;
-    position: relative;
+    position: fixed;
     min-height: 75px;
-    background-color: white;
+    width: 100%;
+    z-index: 99999;
 }
 
-.navbar li{
+#header-img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: 0 50px;
+}
+
+#nav-bar li{
     display: inline-block;
     margin: 0 10px;
 }
 
-#header li:last-child {
-    margin: 0;
-}
-
-.navbar {
+#nav-bar {
     position: absolute;
     right: 0;
+    margin: 0 50px;
+}
+
+main {
+    position: relative;
+    top: 100px;
 }
 
 #first-section {
@@ -45,7 +58,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-input, button {
+input[type="email"], input[type="submit"] {
     display: block;
     margin: auto auto 20px auto;
 }
@@ -53,6 +66,11 @@ input, button {
 #second-section {
     background-color: white;
     position: relative;
+    min-width: fit-content;
+}
+
+.text-information {
+    margin: 0 0 0 20px
 }
 
 .iconandtext {
@@ -82,7 +100,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
     flex-wrap: nowrap;
 }
 
@@ -139,7 +157,7 @@ footer {
     justify-content: center;
 }
 
-input {
+input[type="email"] {
     border-radius: 20px;
     border-style: solid;
     height: 30px;
@@ -147,7 +165,7 @@ input {
     padding: 10px;
 }
 
-button {
+button, input[type="submit"] {
     border-radius: 20px;
     height: 35px;
     width: 100px;
@@ -162,6 +180,7 @@ button:hover {
     background-color: white;
     color: #242bed;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 a {
@@ -185,28 +204,28 @@ a:hover {
     #header {
         display: block;
         min-height: 150px;
-        margin: 0 auto;
+        padding: 10px;
         text-align: center;
+        position: relative
     }  
 
-    .navbar {
+    #nav-bar {
         position: relative;
     }
 
-    .navbar ul {
+    #nav-bar ul {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
+    }
+
+    #nav-bar li {
         margin: 10px 0;
     }
 
-    .navbar li {
-        margin: 10px 0;
-    }
-
-    #header li:last-child {
-        margin: 10px 10px;
+    main {
+        top: 50px;
     }
 }
